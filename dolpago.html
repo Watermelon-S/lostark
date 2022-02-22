@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="author" content="尔思">
+    <meta name="baidu-site-verification" content="code-e4CKjPuWsj" />
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="MMORPG 失落的方舟">
+    <meta name="keywords" content="MMORPG 失落的方舟 资料站 铭刻 bingo 俄服 欧服 美服 steam服">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./static/img/logo (1).png">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>BoundLess-无止境</title>
+    <link rel="icon" href="./static/img/logo (1).png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./static/js/bootstrap.min.css">
+    <!-- ajax -->
+    <script src="./static/js/jquery.min.js"></script>
+    <!-- jquery -->
+    <script src="./static/js/jquery-ui.js"></script>
+    <script src="./static/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./static/js/bootstrap-select.css" />
+    <script src="./static/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./static/engrave.css">
+    <!-- 谷歌分析 -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86992520-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-86992520-1');
+    </script>
+</head>
+<div id="top_menu">
+    <div class="container">
+        <div class="first_section">
+            <!-- <div class="openbtn" onclick="openNav()"><img src="./static/img/bento-white.png"></div> -->
+            <a href="/">
+                <div class="companylogo"><img src="./static/img/logo (1).png"></div>
+            </a>
+            <!-- <div class="mobile_game_display" onclick='location.href="/lostark/"'><img src="./static/img/lostark_mobile_game_logo.png"></div> -->
+        </div>
+        <div class="second_section">
+            <a class="home_a" href="/">
+                <div class="home">主页</div>
+            </a>
+            <a class="engrave_a" href="./engrave.html">
+                <div class="engrave">铭刻工具</div>
+            </a>
+            <a class="bingo_a" href="./bingo.html">
+                <div class="bingo">Bingo模拟器</div>
+            </a>
+            <a class="dolpago_a" href="./dolpago.html">
+                <div class="dolpago">能力石模拟器</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div id="content">
+        <div class="inner_content">
+            <div class="handwork_box">
+                <div class="handwork_box_inner">
+                    <div class="section_one">
+                        <div class="section_one_top">目标</div>
+                        <div class="section_one_first_wrapper">
+                            <div class="target_text1">增加能力</div>
+                            <div class="target_in_box1">
+                                <div id="goal1">7</div>
+                                <div class="select_button_wrapper">
+                                    <select class="select_button" onchange="change_goal(1, this.value);">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7" selected="selected">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="target_in_box2">
+                                <div id="goal2">6</div>
+                                <div class="select_button_wrapper">
+                                    <select class="select_button" onchange="change_goal(2, this.value);">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7" selected="selected">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_one_second_wrapper">
+                            <div class="target_text2">减少能力</div>
+                            <div class="target_in_box3">
+                                <div id="goal3">10</div>
+                                <div class="select_button_wrapper">
+                                    <select class="select_button" onchange="change_goal(3, this.value);">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4" selected="selected">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="traget_control_mobile">
+                            <input type="checkbox" id="auto_adjust" onchange="check_auto_adjust();" checked="">
+                            <div class="target_control_text">目标自动调整</div>
+                        </div>
+                    </div>
+                    <div class="section_two">
+                        <div class="section_two_top">
+                            <div class="section_two_top_mobile"></div>
+                            <div class="section_two_top_text">能力石</div>
+                            <div class="section_two_top_select">
+                                <select id="num_attempts" onchange="reset();">
+                                    <option value="6">6格</option>
+                                    <option value="7">7格</option>
+                                    <option value="8">8格</option>
+                                    <option value="9">9格</option>
+                                    <option value="10" selected="selected">10格</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="abc_div">
+                            <div class="target_text">增加能力</div>
+                            <div class="abc" id="A"><img src="./static/img/A.jpg"></div>
+                            <div id="ability1_sym"><img src="./static/img/A_fail.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_fail.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"></div>
+                            <div class="ability_1_mobile">
+                                <div id="ability1_prob_mobile">0%</div>
+                                <div id="ability1_text_mobile"></div>
+                                <button class="success_button1" onclick="do_attempt(1, 1);">成功</button>
+                                <button class="fail_button1" onclick="do_attempt(1, 0);">失败</button>
+                            </div>
+                            <div class="target_text_mobile">增加能力</div>
+                            <div class="abc" id="B"><img src="./static/img/B.jpg"></div>
+                            <div id="ability2_sym"><img src="./static/img/A_success.png"><img src="./static/img/A_fail.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_success.png"><img src="./static/img/A_fail.png"><img src="./static/img/A_fail.png"><img src="./static/img/A_fail.png"><img src="./static/img/A_success.png"></div>
+                            <div class="ability_2_mobile">
+                                <div id="ability2_prob_mobile">0%</div>
+                                <div id="ability2_text_mobile"></div>
+                                <button class="success_button2" onclick="do_attempt(2, 1);">成功</button>
+                                <button class="fail_button2" onclick="do_attempt(2, 0);">失败</button>
+                            </div>
+                            <div class="target_text">减少能力</div>
+                            <div class="abc" id="C"><img src="./static/img/C.jpg"></div>
+                            <div id="ability3_sym"><img src="./static/img/B_success.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_success.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_fail.png"><img src="./static/img/B_fail.png"></div>
+                            <div class="ability_3_mobile">
+                                <div id="ability3_prob_mobile">0%</div>
+                                <div id="ability3_text_mobile"></div>
+                                <button class="success_button3" onclick="do_attempt(3, 1);">成功</button>
+                                <button class="fail_button3" onclick="do_attempt(3, 0);">失败</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_three">
+                        <div class="section_three_top">成功几率</div>
+                        <div class="empty_spaces"></div>
+                        <div class="ability_1">
+                            <div id="ability1_prob">0%</div>
+                            <div id="ability1_text"></div>
+                        </div>
+                        <div class="ability_2">
+                            <div id="ability2_prob">0%</div>
+                            <div id="ability2_text"></div>
+                        </div>
+                        <div class="empty_spaces"></div>
+                        <div class="ability_3">
+                            <div id="ability3_prob">0%</div>
+                            <div id="ability3_text"></div>
+                        </div>
+                    </div>
+                    <div class="section_four">
+                        <div class="section_four_top">成功 / 失败</div>
+                        <div class="empty_spaces"></div>
+                        <div class="active_1_button">
+                            <button class="success_button1" onclick="do_attempt(1, 1);">成功</button>
+                            <button class="fail_button1" onclick="do_attempt(1, 0);">失败</button>
+                        </div>
+                        <div class="active_2_button">
+                            <button class="success_button2" onclick="do_attempt(2, 1);">成功</button>
+                            <button class="fail_button2" onclick="do_attempt(2, 0);">失败</button>
+                        </div>
+                        <div class="empty_spaces"></div>
+                        <div class="active_3_button">
+                            <button class="success_button3" onclick="do_attempt(3, 1);">成功</button>
+                            <button class="fail_button3" onclick="do_attempt(3, 0);">失败</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="target_control_box">
+                    <div class="target_control_left">
+                        <input type="checkbox" id="auto_adjust" onchange="check_auto_adjust();" checked=""> <span> 目标自动调整</span>
+                    </div>
+                    <div class="target_control_center">
+                        <div>研磨概率</div>
+                        <div id="cur_prob">75.0%</div>
+                    </div>
+                    <!-- <button onclick="save_goal();">保存</button> -->
+                    <div class="target_control_right">
+                        <button class="cancel_button" onclick="undo();">后退一次</button>
+                        <button class="reset_button" onclick="reset();">全部重置</button>
+                    </div>
+                </div>
+                <div class="how_to_use">
+                    <h2 class="info_text_head">◆ 使用方法</h2>
+                    <ul class="info_text_body">
+                        <li>根据能力石等级设置方格数.</li>
+                        <li>在目标栏中设置数值.每个值都旨在研磨具有增加能力A或以上/增加能力B或以上/减少能力C或更少的石头.</li>
+                        <li>成功率是指按研磨按钮时达到各目标的概率.目标达成几率高的能力将显示（推荐）信息.</li>
+                        <li>在方舟游戏中每点1次研磨后,根据游戏中成功/失败的结果在页面按下相应的按钮.则会显示新计算的概率.</li>
+                        <li>重复上述操作直到研磨完成.如果要研磨新石头,请按重置按钮.</li>
+                        <li>后退按钮是一个在发生错误时撤消上一次操作.</li>
+                        <li>通常情况下很多时候达不到目标.(ex.增加能力A目标是9,现在已经成功了6次,机会只剩下2次.)在这种情况下,您需要重新调整目标,因为突破显示的几率为 0%.如果您选中 目标自动调整 选项,将自动重新平衡您的目标.</li>
+                    </ul>
+                    <br>
+                    <h2 class="info_text_head">◆ 参考</h2>
+                    <ul class="info_text_body">
+                        <li>参考了 로파고 制作者(Heehoon Kim)的源代码,改编了UI.</li>
+                        <li>感谢 돌파고 제작자님, 로파고 제작자님, 로파고 웹버전 제작자님께 所有源码都是开源的.</li>
+                        <li>该服务是在 돌파고 제작자님, 로파고 제작자님의 同意的情况下提供的.</li>
+                    </ul>
+                    <br>
+                    <h2 class="info_text_head">◆ 相关链接</h2>
+                    <ul class="info_text_body">
+                        <li>1. 돌파고 제작자(로스트아크 인벤 ID : 루트골레인) 相关地址 myar.tistory.com/26</li>
+                        <li>2. 로파고 제작자(로스트아크 인벤 ID : 로파고) 相关地址 inven.co.kr/board/lostark/4821/77432</li>
+                        <li>3. 로파고 웹버전 제작자(Heehoon Kim) 相关地址 heehoon.kim/dolpago</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+            const CMAX = 11; 
+    const PMAX = 6; 
+    let dp = new Float64Array(CMAX ** 6 * PMAX);
+    let seq;
+    let saved_goal1 = 7, saved_goal2 = 7, saved_goal3 = 4;
+    let goal1, goal2, goal3;
+
+    function idx(a, b, c, p, d, e, f) {
+    return (((((a * CMAX + b) * CMAX + c) * PMAX + p) * CMAX + d) * CMAX + e) * CMAX + f;
+    }
+
+    function decode_p(p) {
+    return 0.25 + p * 0.1;
+    }
+
+    function cal_prob1(a, b, c, p, d, e, f) {
+    return a > 0 ? decode_p(p) * dp[idx(a - 1, b, c, Math.max(p - 1, 0), Math.max(d - 1, 0), e, f)] + (1 - decode_p(p)) * dp[idx(a - 1, b, c, Math.min(p + 1, PMAX - 1), d, e, f)] : 0;
+    }
+
+    function cal_prob1_safe(a, b, c, p, d, e, f) {
+    if (f < 0) return 0;
+    d = Math.max(d, 0);
+    e = Math.max(e, 0);
+    return cal_prob1(a, b, c, p, d, e, f);
+    }
+
+    function cal_prob2(a, b, c, p, d, e, f) {
+    return b > 0 ? decode_p(p) * dp[idx(a, b - 1, c, Math.max(p - 1, 0), d, Math.max(e - 1, 0), f)] + (1 - decode_p(p)) * dp[idx(a, b - 1, c, Math.min(p + 1, PMAX - 1), d, e, f)] : 0;
+    }
+
+    function cal_prob2_safe(a, b, c, p, d, e, f) {
+    if (f < 0) return 0;
+    d = Math.max(d, 0);
+    e = Math.max(e, 0);
+    return cal_prob2(a, b, c, p, d, e, f);
+    }
+
+    function cal_prob3(a, b, c, p, d, e, f) {
+    return c > 0 ? (f == 0 ? 0 : decode_p(p) * dp[idx(a, b, c - 1, Math.max(p - 1, 0), d, e, f - 1)]) + (1 - decode_p(p)) * dp[idx(a, b, c - 1, Math.min(p + 1, PMAX - 1), d, e, f)] : 0;
+    }
+
+    function cal_prob3_safe(a, b, c, p, d, e, f) {
+    if (f < 0) return 0;
+    d = Math.max(d, 0);
+    e = Math.max(e, 0);
+    return cal_prob3(a, b, c, p, d, e, f);
+    }
+
+    function cal_dp() {
+    let st = performance.now();
+    for (let a = 0; a < CMAX; ++a) {
+    for (let d = 0; d <= a; ++d) {
+    for (let b = 0; b < CMAX; ++b) {
+    for (let e = 0; e <= b; ++e) {
+    for (let c = 0; c < CMAX; ++c) {
+    for (let f = 0; f < CMAX; ++f) {
+    for (let p = 0; p < PMAX; ++p) {
+        let t;
+        if (d == 0 && e == 0 && c <= f) {
+        t = 1;
+        } else if (c < f) {
+        t = dp[idx(a, b, c, p, d, e, c)];
+        } else {
+        t = 0;
+        t = Math.max(t, cal_prob1(a, b, c, p, d, e, f));
+        t = Math.max(t, cal_prob2(a, b, c, p, d, e, f));
+        t = Math.max(t, cal_prob3(a, b, c, p, d, e, f));
+        }
+        dp[idx(a, b, c, p, d, e, f)] = t;
+    }}}}}}}
+    let et = performance.now();
+    // document.getElementById("info").innerHTML = "확률 계산 완료! (" + ((et - st) / 1000).toFixed(3) + "초)";
+    }
+
+    function cal_p_from_seq() {
+    let p = PMAX - 1;
+    for (const attempt of seq) {
+        if (attempt[1] == 0) {
+        p = Math.min(p + 1, PMAX - 1);
+        } else {
+        p = Math.max(p - 1, 0);
+        }
+    }
+    return p;
+    }
+
+    function build_sym_from_seq(num_attempts, idx) {
+    let sym = "", cnt = 0;
+    for (const attempt of seq) {
+        if (attempt[0] == idx) {
+        sym += attempt[1] == 0 ? "<img src=./static/img/A_fail.png>" : "<img src=./static/img/A_success.png>";
+        ++cnt;
+        }
+    }
+    sym += "<img src=./static/img/A_basic.png>".repeat(num_attempts - cnt);
+    return sym;
+    }
+
+    function build_sym_from_seq2(num_attempts, idx) {
+    let sym = "", cnt = 0;
+    for (const attempt of seq) {
+        if (attempt[0] == idx) {
+        sym += attempt[1] == 0 ? "<img src=./static/img/B_fail.png>" : "<img src=./static/img/B_success.png>";
+        ++cnt;
+        }
+    }
+    sym += "<img src=./static/img/B_basic.png>".repeat(num_attempts - cnt);
+    return sym;
+    }
+
+    function cal_idx_from_seq(num_attempts, goal, idx) {
+    let a = num_attempts, d = goal;
+    for (const attempt of seq) {
+        if (attempt[0] == idx) {
+        --a;
+        if (attempt[1] == 1) {
+            --d;
+        }
+        }
+    }
+    return [a, d];
+    }
+
+    function toPercent(x) {
+    x *= 100;
+    return x == 0 ? "0%" : x.toFixed(Math.max(2 - Math.floor(Math.log(x) / Math.log(10)), 0)) + "%";
+    }
+
+    function get_num_attempts() {
+    return parseInt(document.getElementById("num_attempts").value, 10);
+    }
+
+    function do_attempt(idx, result) {
+    let num_attempts = get_num_attempts(), cnt = 0;
+    for (const attempt of seq) {
+        if (attempt[0] == idx) {
+        ++cnt;
+        }
+    }
+    if (cnt < num_attempts) {
+        seq.push([idx, result]);
+    }
+    adjust_goal();
+    set_ui();
+    }
+
+    function undo() {
+    seq.pop();
+    adjust_goal();
+    set_ui();
+    }
+
+    function reset() {
+    seq = [];
+    goal1 = saved_goal1;
+    goal2 = saved_goal2;
+    goal3 = saved_goal3;
+    adjust_goal();
+    set_ui();
+    }
+
+    function change_goal(idx, val) {
+    if (idx == 1) goal1 = Number(val);
+    if (idx == 2) goal2 = Number(val);
+    if (idx == 3) goal3 = Number(val);
+    adjust_goal();
+    set_ui();
+    }
+
+    function save_goal() {
+    saved_goal1 = goal1;
+    saved_goal2 = goal2;
+    saved_goal3 = goal3;
+    }
+
+    function adjust_goal() {
+    if (!document.getElementById("auto_adjust").checked) return;
+
+    let num_attempts = get_num_attempts();
+    let idx1 = cal_idx_from_seq(num_attempts, goal1, 1);
+    if (idx1[0] < idx1[1]) {
+        goal1 -= idx1[1] - idx1[0];
+    }
+    let idx2 = cal_idx_from_seq(num_attempts, goal2, 2);
+    if (idx2[0] < idx2[1]) {
+        goal2 -= idx2[1] - idx2[0];
+    }
+    let idx3 = cal_idx_from_seq(num_attempts, goal3, 3);
+    if (idx3[1] < 0) {
+        goal3 -= idx3[1];
+    }
+    }
+
+    function check_auto_adjust() {
+    adjust_goal();
+    set_ui();
+    }
+
+    function set_ui() {
+    let p = cal_p_from_seq();
+    document.getElementById("cur_prob").innerHTML = toPercent(decode_p(p));
+
+    let num_attempts = get_num_attempts();
+    document.getElementById("ability1_sym").innerHTML = build_sym_from_seq(num_attempts, 1);
+    document.getElementById("ability2_sym").innerHTML = build_sym_from_seq(num_attempts, 2);
+    document.getElementById("ability3_sym").innerHTML = build_sym_from_seq2(num_attempts, 3);
+
+    let idx1 = cal_idx_from_seq(num_attempts, goal1, 1);
+    let idx2 = cal_idx_from_seq(num_attempts, goal2, 2);
+    let idx3 = cal_idx_from_seq(num_attempts, goal3, 3);
+    let prob1 = cal_prob1_safe(idx1[0], idx2[0], idx3[0], p, idx1[1], idx2[1], idx3[1]);
+    let prob2 = cal_prob2_safe(idx1[0], idx2[0], idx3[0], p, idx1[1], idx2[1], idx3[1]);
+    let prob3 = cal_prob3_safe(idx1[0], idx2[0], idx3[0], p, idx1[1], idx2[1], idx3[1]);
+    document.getElementById("ability1_prob").innerHTML = toPercent(prob1);
+    document.getElementById("ability2_prob").innerHTML = toPercent(prob2);
+    document.getElementById("ability3_prob").innerHTML = toPercent(prob3);
+
+    let max_prob = Math.max(prob1, prob2, prob3);
+    document.getElementById("ability1_text").innerHTML = prob1 == max_prob && prob1 != 0 ? "(推荐)" : "";
+    document.getElementById("ability2_text").innerHTML = prob2 == max_prob && prob2 != 0 ? "(推荐)" : "";
+    document.getElementById("ability3_text").innerHTML = prob3 == max_prob && prob3 != 0 ? "(推荐)" : "";
+
+    document.getElementById("goal1").innerHTML = `${goal1}`
+    document.getElementById("goal2").innerHTML = `${goal2}`
+    document.getElementById("goal3").innerHTML = `${goal3}`
+
+    document.getElementById("ability1_text_mobile").innerHTML = document.getElementById("ability1_text").innerText;
+    document.getElementById("ability2_text_mobile").innerHTML = document.getElementById("ability2_text").innerText;
+    document.getElementById("ability3_text_mobile").innerHTML = document.getElementById("ability3_text").innerText;
+    document.getElementById("ability1_prob_mobile").innerHTML = document.getElementById("ability1_prob").innerText;
+    document.getElementById("ability2_prob_mobile").innerHTML = document.getElementById("ability2_prob").innerText;
+    document.getElementById("ability3_prob_mobile").innerHTML = document.getElementById("ability3_prob").innerText;
+    }
+
+    cal_dp();
+    reset();
+</script>
+<footer class="footer">
+    <div class="footer_first">
+        <!-- <img src=""> -->
+    </div>
+    <div class="footer_second">
+        <div class="about_1">BoundLess : 无止境</div>
+        <div class="about_3">E-mail : southveil@qq.com</div>
+        <div class="about_4">【俄服K交流群】 : <a href="https://jq.qq.com/?_wv=1027&k=aJxIgXoe" target="_blank">779728406</a></div>
+        <div class="about_4">【steam交流群】 : <a href="https://jq.qq.com/?_wv=1027&k=aJxIgXoe" target="_blank">893355579</a></div>
+    </div>
+    <!-- <div class="footer_third"> -->
+    <!-- <div class="footer_third_board"> -->
+    <!--备案认证-->
+    <!-- <div class="ascro_mark"> -->
+    <!-- </div> -->
+    <!-- <div class="ascro_explain">
+                <div class="explain_1"></div>
+                <div class="explain_2">.</div>
+            </div>
+        </div>
+    </div> -->
+</footer>
+<footer class="second_footer">
+    <div class="copywright">CopyRight 2022. 尔思 All rights reserved.Game content and assets are trademarks of Smilegate RPG, Inc.</div>
+</footer>
+
+</html>
