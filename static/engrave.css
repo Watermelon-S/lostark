@@ -2904,7 +2904,6 @@ body {
     }
 
     .cancel_button {
-        height: 4rem;
         width: 12rem;
         background: rgb(50, 50, 50);
         color: white;
