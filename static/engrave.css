@@ -37,7 +37,6 @@ body {
     background: 0 0;
     color: var(--theme-0);
     border-radius: .25rem;
-    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 19%);
     color: #fff;
     min-height: 500px;
 }
